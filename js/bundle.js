@@ -148,6 +148,12 @@
 	  //hint: use window._randomColorString() (defined at top) to get a random color!
 	
 	  //your code here!
+	  const $squares = $(".square");
+	
+	  $squares.each( (i, square) => {
+	    const color = window._randomColorString();
+	    $(square).css("background-color", color);
+	  });
 	};
 	
 	View.prototype.exercise7 = function(){
