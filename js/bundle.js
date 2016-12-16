@@ -133,6 +133,11 @@
 	  //  'data-pos' of every square
 	
 	  //your code here!
+	  $('.square').on("click", (event) => {
+	    const $cell = event.currentTarget;
+	    const pos = $($cell).attr("data-pos");
+	    alert(pos);
+	  });
 	};
 	
 	View.prototype.exercise6 = function () {
