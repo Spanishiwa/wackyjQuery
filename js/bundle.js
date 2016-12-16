@@ -116,6 +116,12 @@
 	  //Result: Your name appears in every other square.
 	
 	  //your code here!
+	  // const $squares = $(".square");
+	  $(".square").each( (i, $square) => {
+	    if (i % 2 === 0) {
+	      $($square).text('Michael Yabut');
+	    }
+	  });
 	};
 	
 	View.prototype.exercise5 = function () {
