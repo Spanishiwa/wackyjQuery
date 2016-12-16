@@ -164,6 +164,14 @@
 	  //rainbow.
 	
 	  //your code here!
+	
+	  const $square = $(".square");
+	
+	  $square.on("mouseover", (event) => {
+	    const $cell = event.currentTarget;
+	    const color = $($cell).css("background-color");
+	    console.log(color);
+	  });
 	};
 	
 	
